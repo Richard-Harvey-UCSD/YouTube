@@ -11,6 +11,7 @@ export default function App() {
       setMessage('count set to zero');
     else
       setMessage('count not zero');
+    console.log('count = ', count);
   }, [count]);
 
   return (
