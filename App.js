@@ -8,7 +8,7 @@ export default function App() {
     <View style={styles.container}>
       <StatusBar style="auto" />
 
-      <Text style={styles.text}>useState Hook</Text>
+      <Text style={styles.text}>useEffect Hook</Text>
       <Text style={styles.text}>with React Native!</Text>
     </View>
   );
