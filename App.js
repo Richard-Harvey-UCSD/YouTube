@@ -1,28 +1,22 @@
 import React from 'react';
-import { StatusBar } from 'expo-status-bar';
-import { Button, StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
+
+import UseContextHook from './src/useContextHook';
+
 
 export default function App() {
-
   return (
-    <View style={styles.container}>
-      <StatusBar style="auto" />
-
-      <Text style={styles.text}>useEffect Hook</Text>
-      <Text style={styles.text}>with React Native!</Text>
-    </View>
+    <View style={styles.view}>
+      <Text style={{ fontSize: 24, marginBottom: 50 }}>useContext in React Native</Text>
+      <UseContextHook />
+    </View >
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
+  view: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
     justifyContent: 'center',
+    alignItems: 'center',
   },
-  text: {
-    fontSize: 24,
-    marginBottom: 10,
-  }
 });
