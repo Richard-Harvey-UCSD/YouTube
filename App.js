@@ -1,14 +1,14 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-import UseContextHook from './src/useContextHook';
-
+import UseReducerHook from './src/useReducerHook';
 
 export default function App() {
   return (
     <View style={styles.view}>
-      <Text style={{ fontSize: 24, marginBottom: 50 }}>useContext in React Native</Text>
-      <UseContextHook />
+      <Text style={{ fontSize: 40, marginBottom: 10 }}>useReducer</Text>
+      <Text style={{ fontSize: 40, marginBottom: 50 }}>in React Native</Text>
+      <UseReducerHook />
     </View >
   );
 }
