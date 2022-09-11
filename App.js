@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-import UseReducerHook from './src/useReducerHook';
+import UseReducerHook from './src/UseReducerHook';
 
 export default function App() {
   return (
