@@ -1,5 +1,5 @@
 import { View, Text, TouchableOpacity } from 'react-native';
-import React, { useMemo, useState } from 'react';
+import React, { useCallback, useMemo, useState } from 'react';
 
 const useMemoHook = () => {
   const [count, setCount] = useState(0);
@@ -20,11 +20,15 @@ const useMemoHook = () => {
     return num;
   };
 
+  const memoizedCallback = useCallback(() => expensiveOperation(count), [count]);
+
+  console.log('memoizedCallback: ', memoizedCallback);
+
   // const operation = expensiveOperation(count);
-  const operation = useMemo(() => expensiveOperation(count), [count])
+  const operation = useMemo(() => expensiveOperation(count), [count]);
 
   console.log('Count:', count);
-  console.log(`Memoized Count: ${memoizedCount} \n`)
+  console.log(`Memoized Count: ${memoizedCount} \n`);
 
   return (
     <>
