@@ -1,8 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import UseCallbackHook from './src/UseCallbackHook';
 
-import UseMemoHook from './src/UseMemoHook';
+import UseCallbackHook from './src/UseCallbackHook';
 
 export default function App() {
   return (
