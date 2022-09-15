@@ -1,14 +1,14 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-import UseCallbackHook from './src/UseCallbackHook';
+import UseIdHook from './src/UseIdHook';
 
 export default function App() {
   return (
     <View style={styles.view}>
-      <Text style={{ fontSize: 40, marginBottom: 10 }}>useMemo</Text>
+      <Text style={{ fontSize: 40, marginBottom: 10 }}>useId</Text>
       <Text style={{ fontSize: 40, marginBottom: 10 }}>in React Native</Text>
-      <UseCallbackHook />
+      <UseIdHook />
     </View >
   );
 }
