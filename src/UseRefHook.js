@@ -1,24 +1,45 @@
-import { View, Text, TextInput } from 'react-native';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef } from 'react';
+import { View, TextInput, Button } from 'react-native';
 
-const UseRefHook = () => {
-  const [inputValue, setInputValue] = useState('');
-  const previousInputValue = useRef('');
+const Focus = () => {
+  const inputElement = useRef();
 
-  useEffect(() => {
-    previousInputValue.current = inputValue;
-  }, [inputValue])
+  const focusInput = () => {
+    inputElement.current.focus();
+  };
 
   return (
-    <View>
-      <TextInput
-        placeholder='inputValue: '
-        onChangeText={value => setInputValue(value)}
-      />
-      <Text>Current Value: {inputValue}</Text>
-      <Text>Previous Value: {previousInputValue.current}</Text>
-    </View>
+    <>
+      <View style={{ flexDirection: 'row', marginTop: 40 }}>
+        <TextInput
+          ref={inputElement}
+          placeholder='Signature'
+          style={{
+            borderColor: 'gray',
+            borderWidth: 1,
+            flex: 0.5,
+            padding: 5,
+            fontSize: 20,
+          }}
+        />
+      </View>
+      <View style={{ flexDirection: 'row', marginTop: 20 }}>
+        <TextInput
+          placeholder='Signature'
+          style={{
+            borderColor: 'gray',
+            borderWidth: 1,
+            flex: 0.5,
+            padding: 5,
+            fontSize: 20,
+          }}
+        />
+      </View>
+      <View style={{ marginTop: 40 }}>
+        <Button title='Focus' onPress={focusInput} />
+      </View>
+    </>
   );
 };
 
-export default UseRefHook;
+export default Focus;
