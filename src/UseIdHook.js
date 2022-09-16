@@ -32,7 +32,7 @@ const UseIdHook = () => {
     <View>
       <Text style={{ fontSize: 20 }}>Title: {title.title}</Text>
       <Text style={{ fontSize: 20 }}>Name: {title.name}</Text>
-      <Text style={{ fontSize: 20, marginBottom: 20 }}>ID: {title.id}</Text>
+      <Text style={{ fontSize: 20, marginBottom: 20}}>ID: {title.id}</Text>
     </View>
   );
 
