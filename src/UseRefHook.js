@@ -19,18 +19,7 @@ const Focus = () => {
             borderWidth: 1,
             flex: 0.5,
             padding: 5,
-            fontSize: 20,
-          }}
-        />
-      </View>
-      <View style={{ flexDirection: 'row', marginTop: 20 }}>
-        <TextInput
-          placeholder='Signature'
-          style={{
-            borderColor: 'gray',
-            borderWidth: 1,
-            flex: 0.5,
-            padding: 5,
+            paddingLeft: 10,
             fontSize: 20,
           }}
         />
