@@ -1,8 +1,8 @@
+import { View, Text, TextInput, Button } from 'react-native';
 import React, { useRef } from 'react';
-import { View, TextInput, Button } from 'react-native';
 
-const Focus = () => {
-  const inputElement = useRef();
+const useRefHook = () => {
+  const inputElement = useRef('');
 
   const focusInput = () => {
     inputElement.current.focus();
@@ -18,8 +18,8 @@ const Focus = () => {
             borderColor: 'gray',
             borderWidth: 1,
             flex: 0.5,
-            padding: 5,
             paddingLeft: 10,
+            padding: 5,
             fontSize: 20,
           }}
         />
@@ -31,4 +31,4 @@ const Focus = () => {
   );
 };
 
-export default Focus;
+export default useRefHook;
