@@ -1,7 +1,7 @@
-import { View, Text, Alert, TextInput } from 'react-native';
+import { View, Text, Alert } from 'react-native';
 import React, { forwardRef, useImperativeHandle } from 'react';
 
-const CustomInput = (props, ref) => {
+const CustomComponent = (props, ref) => {
 
   useImperativeHandle(ref, () => {
     return { alertMessage: () => Alert.alert(`Alert Message:\n 'Hi'`) };
@@ -9,9 +9,9 @@ const CustomInput = (props, ref) => {
 
   return (
     <View>
-      <Text>Click to see alert message</Text>
+      <Text>CustomComponent</Text>
     </View>
   );
 };
 
-export default forwardRef(CustomInput);
+export default forwardRef(CustomComponent);

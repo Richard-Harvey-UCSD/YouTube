@@ -1,5 +1,5 @@
 import { View, Button } from 'react-native';
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 
 import CustomComponent from '../components/CustomComponent';
 
@@ -8,9 +8,7 @@ const UseImperativeHandleHook = () => {
 
   return (
     <View>
-      <CustomComponent
-        ref={inputRef}
-      />
+      <CustomComponent ref={inputRef} />
       <Button title='Alert' onPress={() => inputRef.current.alertMessage()} />
     </View>
   );
