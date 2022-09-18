@@ -1,10 +1,17 @@
-import { View, Text } from 'react-native';
-import React from 'react';
+import { View, Button } from 'react-native';
+import React, { useRef, useState } from 'react';
+
+import CustomComponent from '../components/CustomComponent';
 
 const UseImperativeHandleHook = () => {
+  const inputRef = useRef(null);
+
   return (
     <View>
-      <Text>UseImperativeHandleHook</Text>
+      <CustomComponent
+        ref={inputRef}
+      />
+      <Button title='Alert' onPress={() => inputRef.current.alertMessage()} />
     </View>
   );
 };
