@@ -1,16 +1,17 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-import UseDebugValueHook from './src/UseDebugValueHook';
+import TextComponent from './components/TextComponent';
 
 export default function App() {
 
   return (
     <View style={styles.view}>
-      <Text style={{ fontSize: 40, marginBottom: 10 }}>useDebugValue</Text>
-      <Text style={{ fontSize: 40, marginBottom: 10 }}>in React Native</Text>
+      <Text style={{ fontSize: 40, marginBottom: 10 }}>Text Component</Text>
+      <Text style={{ fontSize: 40, marginBottom: 50 }}>in React Native</Text>
 
-      <UseDebugValueHook />
+      <TextComponent type='header'>Title</TextComponent>
+      <TextComponent type='body'>Body Text</TextComponent>
     </View>
   );
 }
