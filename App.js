@@ -7,7 +7,7 @@ export default function App() {
 
   return (
     <View style={styles.view}>
-      <Text style={{ fontSize: 40, marginBottom: 10 }}>useTransition</Text>
+      <Text style={{ fontSize: 40, marginBottom: 10 }}>useDebugValue</Text>
       <Text style={{ fontSize: 40, marginBottom: 10 }}>in React Native</Text>
 
       <UseDebugValueHook />

@@ -5,6 +5,7 @@ import useStatus from '../hooks/useStatus';
 
 const UseDebugValueHook = () => {
   const [pending, setPending] = useStatus();
+  console.log('pending: ', pending);
 
   return (
     <View style={{ justifyContent: 'center', alignItems: 'center' }}>
