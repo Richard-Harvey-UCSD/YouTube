@@ -1,17 +1,17 @@
-import { StyleSheet, Text } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import React, { useState } from 'react';
 
 const TextComponent = ({ children, type }) => {
   const [pressed, setPressed] = useState(false);
 
-  const onPressTitle = () => {
+  const onPressHandle = () => {
     setPressed(!pressed);
   };
 
   return (
     <Text style={styles.baseText}>
       {type === 'header' ?
-        <Text style={pressed ? styles.pressedText : styles.titleText} onPress={onPressTitle}>{children}</Text>
+        <Text style={pressed ? styles.pressedText : styles.titleText} onPress={onPressHandle}>{children}</Text>
         :
         <Text style={styles.bodyText}>{children}</Text>
       }
@@ -38,6 +38,6 @@ const styles = StyleSheet.create({
     fontStyle: 'italic',
   },
   titleText: {
-    color: 'black',
+    color: 'gray'
   }
 });
