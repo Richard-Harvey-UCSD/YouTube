@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-import TextComponent from './components/TextComponent';
+import ViewComponent from './components/ViewComponent';
 
 export default function App() {
 
@@ -10,8 +10,9 @@ export default function App() {
       <Text style={{ fontSize: 40, marginBottom: 10 }}>Text Component</Text>
       <Text style={{ fontSize: 40, marginBottom: 50 }}>in React Native</Text>
 
-      <TextComponent type='header'>Title</TextComponent>
-      <TextComponent type='body'>Body Text</TextComponent>
+      <ViewComponent color='red'>Title</ViewComponent>
+      <ViewComponent color='green'>Body</ViewComponent>
+      <ViewComponent color='blue'>Footer</ViewComponent>
     </View>
   );
 }
