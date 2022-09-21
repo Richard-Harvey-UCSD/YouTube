@@ -1,5 +1,5 @@
-import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
 
 const ViewComponent = ({ children, color }) => {
   return (
@@ -17,18 +17,19 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     height: 100,
-    padding: 10
+    padding: 10,
   },
   box: {
     alignItems: 'center',
     backgroundColor: 'blue',
     borderRadius: 40,
-    flex: 0.5,
+    flex: 0.75,
     justifyContent: 'center',
   },
   text: {
     color: 'white',
-    fontSize: 30,
+    fontSize: 40,
     fontWeight: 'bold',
+    fontStyle: 'italic'
   }
 });
