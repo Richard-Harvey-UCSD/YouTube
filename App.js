@@ -10,9 +10,9 @@ export default function App() {
       <Text style={{ fontSize: 40, marginBottom: 10 }}>Text Component</Text>
       <Text style={{ fontSize: 40, marginBottom: 50 }}>in React Native</Text>
 
-      <ViewComponent color='red'>Title</ViewComponent>
-      <ViewComponent color='green'>Body</ViewComponent>
-      <ViewComponent color='blue'>Footer</ViewComponent>
+      <ViewComponent color='red'>First</ViewComponent>
+      <ViewComponent color='green'>Second</ViewComponent>
+      <ViewComponent color='blue'>Third</ViewComponent>
     </View>
   );
 }
