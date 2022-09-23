@@ -1,7 +1,7 @@
 import { Image, StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 
-const ImageComponent = ({ children, size }) => {
+const ImageComponent = ({ size, children }) => {
   return (
     <View style={styles.container}>
       <Image
@@ -18,12 +18,12 @@ export default ImageComponent;
 const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
-    backgroundColor: 'white',
+    justifyContent: 'center',
     borderColor: 'gray',
     borderWidth: 1,
-    justifyContent: 'center',
-    margin: 5,
     padding: 5,
+    backgroundColor: 'white',
+    margin: 5,
   },
   image: {
     borderColor: 'gray',
